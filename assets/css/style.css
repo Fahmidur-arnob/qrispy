@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: "Spline Sans", sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: #222;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: #F58d17;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Btn */
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand {
+    color: #fff;
+    font-weight: 500;
+    border-color: #FFD870;
+    background-color: #FC8571;
+
+}
+
+.btn-brand:hover {
+    border-color: #974063;
+    background-color: #EF885D;
+    color: #272727;
+}
+
+/* slider css  */
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+
+.slide-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover1.jpg);
+}
+
+.slide-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover2.jpg);
+}
+
+#heroSlider h5::after, 
+#heroSlider h5::before{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: #0A0A0B;
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+/* about section css  */
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #FC8571;
+
+}
+
+/* Menu section */
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+#menu .nav-pills .nav-link {
+    background-color: #FEFFF1;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: #272727;
+    border-radius: 250px;
+    box-shadow: 0 3px 5px #3B7197;
+    padding: 8px;
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: #FC8571;
+}
+
+.menu-item .stars {
+    color: #faa748b9;
+    margin: 15px;
+}
+
+/* features section css  */
+#features {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover3.jpg);
+}
+
+.feature {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature .feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #FC8571;
+    color: #272727;
+    font-size: 28px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
+
+.feature .feature-icon:hover{
+    color: #fff;
+    background-color: #EF885D;
+}
+
+/* css for teams section  */
+.team-member img {
+    max-width: 140px;
+    box-shadow: -10px -10px 0 #FC8571;
+    border-radius: 100px;
+}
+
+/* css for customer review section  */
+#reviews {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover3.jpg);
+}
+.review img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.review .quote-icon {
+    font-size: 74px;
+    color: #F58d17;
+    line-height: 1;
+}
+
+.review .stars {
+    color: #F58d17;
+}
+
+#reviews .carousel-indicators {
+    margin-bottom: -3rem;
+}
+
+/* Css for reservation section is here  */
+#reservation .form-control {
+    border-radius: 0;
+}
+
+#reservation .form-control:focus {
+    box-shadow: none;
+    border-color: #F58d17;
+}
+
+#reservation input.form-control {
+    height: 47px;
+}
+
+/* css for instagram post section is here  */
+
+.insta-post {
+    position: relative;
+    overflow: hidden;
+}
+
+.insta-post .insta-btn {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.insta-post img {
+    transition: all 0.4s;
+}
+
+.insta-post:hover img {
+    transform: scale(1.2);
+}
+
+.insta-post:hover .insta-btn {
+    opacity: 1;
+}
+
+/* css for footer section is written here  */
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover3.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+footer p,
+footer a{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+footer .social-links a {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer img {
+    max-width: 175px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cpy-icon{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
